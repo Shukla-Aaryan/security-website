@@ -198,3 +198,80 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Large Tablets / Small Laptops */
+@media (max-width: 1200px) {
+  .services-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .navbar nav {
+    margin: 15px 0;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-us {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .why-left,
+  .why-right {
+    width: 100%;
+  }
+
+  .why-right {
+    justify-content: center;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+
+  .hero {
+    height: 60vh;
+    background-position: center;
+  }
+
+  .services-section {
+    padding: 50px 20px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 25px;
+  }
+
+  .why-us {
+    padding: 50px 20px;
+  }
+
+  .contact-section {
+    padding: 50px 20px;
+  }
+
+  .cta-btn {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
